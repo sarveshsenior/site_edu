@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  background: white;
+}
+
+.header {
+  width: 1440px;
+  height: 208px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.background {
+  width: 1440px;
+  height: 143px;
+  position: absolute;
+  top: 65px;
+  opacity: 0.80;
+  background: #B8B8B8;
+}
+
+.black-background {
+  width: 1440px;
+  height: 130px;
+  position: absolute;
+  top: 0;
+  opacity: 0.90;
+  background: black;
+}
+
+.logo {
+  width: 138px;
+  height: 136px;
+  position: absolute;
+  left: 449px;
+  top: 0;
+}
+
+.company-name {
+  width: 453px;
+  height: 85px;
+  position: absolute;
+  left: 575px;
+  top: 68px;
+  font-size: 64px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+
+.content {
+  width: 1413px;
+  height: 64px;
+  left: 27px;
+  top: 144px;
+  position: absolute;
+}
+
+.search-bar {
+  width: 443px;
+  height: 56px;
+  left: 491px;
+  top: 0;
+  position: absolute;
+}
+
+.search-box {
+  width: 443px;
+  height: 56px;
+  position: absolute;
+  border-radius: 40px;
+  border: 0.50px black solid;
+}
+
+.search-text {
+  width: 330.28px;
+  height: 20.59px;
+  left: 29.84px;
+  top: 17.71px;
+  position: absolute;
+  color: black;
+  font-size: 21px;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 0.42px;
+  word-wrap: break-word;
+}
+
+.search-icon {
+  width: 42.59px;
+  height: 38.71px;
+  left: 378.70px;
+  top: 8.65px;
+  position: absolute;
+  background: #D0D0D0;
+  border-radius: 9999px;
+}
+
+.search-icon i {
+  width: 19.03px;
+  height: 19.76px;
+  left: 389.48px;
+  top: 16.12px;
+  position: absolute;
+  color: black;
+  font-size: 21px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  letter-spacing: 0.42px;
+  word-wrap: break-word;
+}
+
+.menu {
+  width: 64px;
+  height: 64px;
+  left: 1330px;
+  top: 0;
+  position: absolute;
+}
+
+.menu-icon {
+  width: 41.56px;
+  height: 41.56px;
+  left: 11.21px;
+  top: 10.46px;
+  position: absolute;
+  background: #1C1C1E;
+}
+
+.menu-items {
+  width: 200px;
+  height: 33px;
+  left: 0;
+  top: 13px;
+  position: absolute;
+}
+
+.menu-items .menu-icon {
+  width: 32px;
+  height: 33px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.menu-items .menu-icon-inner {
+  width: 32px;
+  height: 30.44px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.menu-items .menu-icon-inner .bar-1,
+.menu-items .menu-icon-inner .bar-2 {
+  width: 32px;
+  position: absolute;
+  background: #1C1C1E;
+}
+
+.menu-items .menu-icon-inner .bar-1 {
+  height: 17.95px;
+  left: 0;
+  top: 0;
+}
+
+.menu-items .menu-icon-inner .bar-2 {
+  height: 15.61px;
+  left: 6.24px;
+  top: 14.83px;
+}
+
+.menu-items .menu-icon-inner .dot {
+  width: 8px;
+  height: 10px;
+  left: 12px;
+  top: 23px;
+  position: absolute;
+  background: #D9D9D9;
+}
+
+.menu-items .menu-text {
+  width: 160px;
+  height: 26px;
+  left: 40px;
+  top: 5px;
+  position: absolute;
+  color: black;
+  font-size: 21px;
+  font-family: "Font Awesome 5 Free";
+  font-weight:400;
+  line-height: 26px;
+  letter-spacing: 2.21px;
+  word-wrap: break-word;
+}
+
+.about {
+  width: 218px;
+  height: 45px;
+  left: 1195px;
+  top: 19px;
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 2.52px;
+  word-wrap: break-word;
+}
+
+.rotated-border {
+  width: 51px;
+  height: 0;
+  left: 1312px;
+  top: 1px;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  border: 0.50px black solid;
+}
+
+.content-box {
+  width: 508px;
+  height: 633px;
+  left: 40px;
+  top: 262px;
+  position: absolute;
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 45px;
+}
+
+.image-text {
+  width: 416px;
+  height: 97px;
+  left: 191px;
+  top: 566px;
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+
+.image-placeholder {
+  width: 138px;
+  height: 136px;
+  left: 449px;
+  top: 0;
+  position: absolute;
+}
+
+.background-1 {
+  width: 419px;
+  height: 594px;
+  left: 589px;
+  top: 273px;
+  position: absolute;
+  background: #E7E7E7;
+  border-radius: 35px;
+}
+
+.background-2 {
+  width: 383px;
+  height: 587px;
+  left: 1027px;
+  top: 280px;
+  position: absolute;
+  background: #EAEAEA;
+  border-radius: 52px;
+}
+
+.college-info {
+  width: 340px;
+  height: 62px;
+  left: 607px;
+  top: 302px;
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 4px;
+  word-wrap: break-word;
+}
+
+.contact-details {
+  width: 308px;
+  height: 55px;
+  left: 1049px;
+  top: 300px;
+  position: absolute;
+  color: black;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 3.20px;
+  word-wrap: break-word;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="background"></div>
+    <div class="black-background"></div>
+    <img class="logo" src="C:\Users\sarve\OneDrive\Desktop\edu_web\project edu_web\177-1772556_logo-no-background-grey-large-cool-logos-with-removebg-preview.png" />
+    <div class="company-name">COMPANY</div>
+  </div>
+  <div class="content">
+    <div class="search-bar">
+      <div class="search-box">
+        <div class="search-text">Search</div>
+      </div>
+      <div class="search-icon">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-icon"></div>
+    </div>
+    <div class="menu-items">
+      <div class="menu-icon">
+        <div class="menu-icon-inner">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+        </div>
+        <div class="dot"></div>
+      </div>
+      <div class="menu-text">HOME</div>
+    </div>
+    <div class="about">ABOUT</div>
+    <div class="rotated-border"></div>
+  </div>
+  <div class="content-box"></div>
+  <div class="image-text">image here</div>
+  <div class="background-1"></div>
+  <div class="background-2"></div>
+  <div class="college-info">COLLEGE INFO<br /></div>
+  <div class="contact-details">CONTACT DETAILS</div>
+</div>
+</body>
+</html>
